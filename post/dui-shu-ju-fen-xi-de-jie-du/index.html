@@ -1,22 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://baiyu309.github.io/baiyu.github.io</id>
-    <title>白宇的个人网站</title>
-    <updated>2021-03-15T08:53:49.785Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://baiyu309.github.io/baiyu.github.io"/>
-    <link rel="self" href="https://baiyu309.github.io/baiyu.github.io/atom.xml"/>
-    <subtitle>保持思考，坚持输出</subtitle>
-    <logo>https://baiyu309.github.io/baiyu.github.io/images/avatar.png</logo>
-    <icon>https://baiyu309.github.io/baiyu.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, 白宇的个人网站</rights>
-    <entry>
-        <title type="html"><![CDATA[对数据分析的解读]]></title>
-        <id>https://baiyu309.github.io/baiyu.github.io/post/dui-shu-ju-fen-xi-de-jie-du/</id>
-        <link href="https://baiyu309.github.io/baiyu.github.io/post/dui-shu-ju-fen-xi-de-jie-du/">
-        </link>
-        <updated>2021-03-15T08:52:51.000Z</updated>
-        <content type="html"><![CDATA[<p>我感觉很多朋友，对“大数据”、“机器学习”、“深度学习”等概念挺晕的，没有感官的认识，这里，以前这些概念也绕的我挺混的，现在我尝试以我目前对这方面的理解进行解释：<br>
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>对数据分析的解读 | 白宇的个人网站</title>
+<link rel="shortcut icon" href="https://baiyu309.github.io/baiyu.github.io/favicon.ico?v=1615798421677">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://baiyu309.github.io/baiyu.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="对数据分析的解读 | 白宇的个人网站 - Atom Feed" href="https://baiyu309.github.io/baiyu.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="我感觉很多朋友，对“大数据”、“机器学习”、“深度学习”等概念挺晕的，没有感官的认识，这里，以前这些概念也绕的我挺混的，现在我尝试以我目前对这方面的理解进行解释：
+“大数据”、“人工智能”、“机器学习”、“神经网络”、“深度学习”。这几个词..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://baiyu309.github.io/baiyu.github.io">
+  <img class="avatar" src="https://baiyu309.github.io/baiyu.github.io/images/avatar.png?v=1615798421677" alt="">
+  </a>
+  <h1 class="site-title">
+    白宇的个人网站
+  </h1>
+  <p class="site-description">
+    保持思考，坚持输出
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              对数据分析的解读
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-03-15
+              </span>
+              <span>
+                20 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>我感觉很多朋友，对“大数据”、“机器学习”、“深度学习”等概念挺晕的，没有感官的认识，这里，以前这些概念也绕的我挺混的，现在我尝试以我目前对这方面的理解进行解释：<br>
 “大数据”、“人工智能”、“机器学习”、“神经网络”、“深度学习”。这几个词往往掺杂在一起，让人不知所云，这里我简单说一下，不求细节上100%准确，只求能给各位一个感官上的印象，明白说起这几词时，通常都是说什么。<br>
 首先，“人工智能”这个词。大家说，什么是人工智能？每个人在自己心里，都有一个特定的人工智能定义。有人认为，老版《星际迷航》里“Datas上校”这个东西叫人工智能；有人认为《机器公敌》里机器人应该叫人工智能；有人认为电影异形里的“大卫”，这么个东西叫人工智能。近一点的，有人认为谷歌开发的下围棋的系统“AlphaGo”，很吊，这玩意是人工智能；谷歌大脑能通过自己看视频，自动识别出猫，这就人工智能了；还有公司，我们通过“人工智能”干了XXXX。。。。。。因此，可以看出，这个词大的没边，因此，真追究起来，谁要说这个词，除装逼外，你就当他什么都没说就行了。<br>
 当前，“大数据”这个词，也跟“人工智能”这个词一样，大的没边，虚无飘渺的没边，谁要是说这个词而不说具体的东西，你也就当他什么都没说就好了。<br>
@@ -71,24 +144,77 @@ OOOOO<br>
 <p>至于大数据能火多久，这个问题，这就要看大数据的本质了。在我看来，我们业内目前讨论&quot;大数据&quot;，应该更倾向于看它背后的技术对当前企业IT系统的革新。就如同目前大多数企业以关系型数据库为中心的IT系统一样，现在，我们处理信息的手段中，又添加了新的成员。现在，如果你向老大建议，我们不要以关系型数据库为核心的各类&quot;进销存&quot;、财务等系统了，全体回退到以Excel、word来处理信息，我相信，他会分分钟扇死你。我相信，20年后，你向老板建议，我们放弃各类以大数据处理集群为核心的精准营销系统、智能客服系统、用户智能分析系统等等，大家集体回退到以纯关系型数据库为核心的时代;我相信，他也一定会分分钟扇死你。<br>
 当前，我们对大数据的理解，越来越清晰和接地气。阿里巴巴已经把他们的大数据系统，改名为了&quot;maxComputer&quot;。从名字不难看出，大数据就是大电脑，这意味着更大的信息处理能力、更高的灵活性。。。<br>
 大数据能火多久，如同穿越到上世纪80年代，去问个人电脑能火多久一样。现在，我们都不会认为&quot;个人电脑&quot;很&quot;火&quot;。因为，它已经成为了人类工具箱里一件强大的工具，提高了人类的生产力。我相信，&quot;大数据&quot;，也会成为我们的工具箱里的这么一样工具的。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[蹭热点的]]></title>
-        <id>https://baiyu309.github.io/baiyu.github.io/post/222/</id>
-        <link href="https://baiyu309.github.io/baiyu.github.io/post/222/">
-        </link>
-        <updated>2021-03-03T10:30:44.000Z</updated>
-        <content type="html"><![CDATA[<p>这一栏专门蹭一蹭时实发生的热点事件</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[做过的项目]]></title>
-        <id>https://baiyu309.github.io/baiyu.github.io/post/11111/</id>
-        <link href="https://baiyu309.github.io/baiyu.github.io/post/11111/">
-        </link>
-        <updated>2021-03-03T10:22:32.000Z</updated>
-        <content type="html"><![CDATA[<p>这一栏传点以前做过的项目</p>
-]]></content>
-    </entry>
-</feed>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://baiyu309.github.io/baiyu.github.io/post/222/">
+              <h3 class="post-title">
+                蹭热点的
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://baiyu309.github.io/baiyu.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
